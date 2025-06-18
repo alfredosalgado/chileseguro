@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chile Seguro</title>
 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
     <!-- Meta Open Graph para WhatsApp y redes sociales -->
     <meta property="og:title" content="chileseguro" />
     <meta property="og:description" content="Chile Seguro (Safety and You SpA): especialistas en prevención de riesgos, asesoría normativa, documentación, capacitaciones y sistemas de gestión de seguridad laboral." />
@@ -231,6 +236,69 @@
       </div>
     </div>
 
+
+
+
+
+
+
+
+    <section id="empresas" class="py-16 sm:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+              <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                  Empresas que han confiado en nosotros
+              </h2>
+              <p class="mt-4 text-lg leading-6 text-gray-600">
+                  Estamos orgullosos de haber colaborado con una diversa gama de clientes.
+              </p>
+          </div>
+
+          <div id="company-grid" class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              </div>
+      </div>
+  </section>
+
+  <div id="gallery-modal" class="hidden fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4">
+      
+      <div id="modal-content" class="bg-white rounded-lg shadow-2xl max-w-4xl w-full max-h-[90vh] flex flex-col relative">
+          
+          <div class="p-4 border-b border-gray-200 flex justify-between items-center">
+              <h3 id="modal-title" class="text-xl font-semibold text-gray-800">Galería de Proyectos</h3>
+              <button id="close-modal-btn" class="text-gray-500 hover:text-red-600 transition-colors duration-200">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+              </button>
+          </div>
+          
+          <div class="p-4 flex-grow relative flex items-center justify-center">
+              <div class="relative w-full h-full flex items-center justify-center">
+                  <img id="modal-image" src="" alt="Foto del proyecto" class="max-w-full max-h-[70vh] object-contain rounded-md">
+              </div>
+
+              <button id="prev-btn" class="nav-arrow absolute left-0 top-1/2 -translate-y-1/2 ml-2 sm:ml-4 bg-white/70 hover:bg-white p-2 rounded-full shadow-md transition-all duration-200">
+                  <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+              </button>
+
+              <button id="next-btn" class="nav-arrow absolute right-0 top-1/2 -translate-y-1/2 mr-2 sm:mr-4 bg-white/70 hover:bg-white p-2 rounded-full shadow-md transition-all duration-200">
+                  <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              </button>
+          </div>
+
+          <div class="p-2 text-center text-sm text-gray-500 bg-gray-50 rounded-b-lg">
+              <span id="image-counter"></span>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
     <div class="div-con-im counter-container pt-5 pb-5">
       <div class="bg-whiteopacity rounded p-4 mt-5">
         <div class="counter-box">
@@ -263,7 +331,7 @@
       <a class="px-5 text-barlowc texto-fade description text-center text-light bg-ryf w-75 rounded d-flex align-items-center justify-content-center" href="tel:+56941277580"><p class="mb-0">+56 9 4127 7580</p></a>
       <p class="px-5 text-barlowc texto-fade description text-center pt-4 text-dark">Correo:</p>
 
-      <a class="px-5 text-barlowc texto-fade description text-center text-light bg-ryf w-75 rounded d-flex align-items-center justify-content-center" href="mailto:jonathanrodriguez@chileseguro.cl"><p class="mb-0">jonathanrodriguez@chileseguro.cl</p></a>
+      <a class="px-5 text-barlowc texto-fade description text-center text-light bg-ryf w-75 rounded d-flex align-items-center justify-content-center" href="mailto:jonathanrodriguez@chilemasseguro.cl"><p class="mb-0">jonathanrodriguez@chilemasseguro.cl</p></a>
       <p class="px-5 text-barlowc texto-fade description text-center pt-4 text-dark">Contacto:</p>
       <p class="px-5 text-barlowc texto-fade description text-center text-light bg-ryf w-75 rounded d-flex align-items-center justify-content-center mb-5">Jonathan A. Rodriguez Rodriguez - Operations Manager</p>
     </div>

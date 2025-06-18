@@ -226,7 +226,6 @@ ol li::marker {
   position: relative; /* Para que la imagen se posicione absolutamente */
   overflow: hidden; /* Ocultamos cualquier parte de la imagen que se salga del contenedor */
   height: 450px; /* O la altura que desees para tu carrusel */
-  margin-right: ;
 }
 
 .carousel-item::before {
@@ -1103,6 +1102,63 @@ body {
     font-size: 0.8rem;
    
   }
+}
+
+
+
+
+
+
+
+
+/* ===================================== */
+/* ESTILOS GENERALES Y FUENTES           */
+/* ===================================== */
+
+/* ===================================== */
+/* ANIMACIONES PARA EL MODAL DE GALERÍA  */
+/* ===================================== */
+
+/* --- Animación de entrada (cuando aparece el modal) --- */
+
+/* Estado inicial: invisible y ligeramente encogido */
+.modal-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+/* Estado final: visible y en su tamaño normal, con una transición suave */
+.modal-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms ease-out, transform 300ms ease-out;
+}
+
+
+/* --- Animación de salida (cuando se cierra el modal) --- */
+
+/* Estado inicial: visible y en su tamaño normal */
+.modal-leave {
+  opacity: 1;
+  transform: scale(1);
+}
+/* Estado final: invisible y encogido, con transición */
+.modal-leave-active {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+
+
+/* ===================================== */
+/* PEQUEÑOS AJUSTES DE USABILIDAD        */
+/* ===================================== */
+
+/* Evita que el texto de las flechas de navegación sea seleccionado al hacer doble clic */
+.nav-arrow {
+  user-select: none; /* none | auto | text | all | contain */
+  -webkit-user-select: none; /* Para compatibilidad con Safari */
+  -moz-user-select: none; /* Para compatibilidad con Firefox */
+  -ms-user-select: none; /* Para compatibilidad con IE/Edge */
 }
 
 
